@@ -96,3 +96,5 @@ The consul template structure is documented under `_rootfs/etc/consul-template`.
 - start a service `sv start fpm` `sv start nginx`
 - stop a service `sv stop fpm` `sv stop nginx`
 - restart a service `sv restart fpm` `sv restart nginx`
+
+# Maintainers
