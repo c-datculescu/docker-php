@@ -16,6 +16,8 @@ apt-get update && \
         php${PHP_MAJOR_VERSION}-curl \
         php-memcached \
         php${PHP_MAJOR_VERSION}-readline \
+        php${PHP_MAJOR_VERSION}-zip \
+        unzip \
         ca-certificates \
         apt-transport-https \
         vim \

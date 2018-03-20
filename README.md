@@ -28,6 +28,7 @@ Along with the image, a few additional software is included in the form of exten
 - mysql
 - readline
 - mcrypt (php < 7.2)
+- zip
 
 
 For additional information please consult [Sury](https://deb.sury.org/).
@@ -48,6 +49,7 @@ Additional packages are also bundled with the image as follows:
 - wget
 - bc
 - telnet
+- unzip
 
 Some of these tools are very good for debugging various stuff, others are there for convenience (telnet, vim). Feel free to update according to your needs by forking the repository.
 
