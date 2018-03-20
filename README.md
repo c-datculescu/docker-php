@@ -86,3 +86,13 @@ The consul template structure is documented under `_rootfs/etc/consul-template`.
 # Build arguments
 
 `PHP_MAJOR_VERSION` is used to control which version of fpm/cli gets built currently. Most of the extensions are built like this. For an example, please consult the `build.sh` from each folder.
+
+# Running the image
+
+`docker run cdatculescu/php:nginx-fpm-5.6 bash /run_base.sh`
+
+# Controlling the services
+
+- start a service `sv start fpm` `sv start nginx`
+- stop a service `sv stop fpm` `sv stop nginx`
+- restart a service `sv restart fpm` `sv restart nginx`
