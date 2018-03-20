@@ -76,3 +76,11 @@ Additionally, by default the php socket is located in `/run/php/php-fpm.sock`.
 The nginx configuration is located in the official location, and nginx is configured to communicate with php-fpm via socket.
 
 The home location of the fpm/nginx installation is located in `/var/www/html/`.
+
+# Templating
+
+The consul template structure is documented under `_rootfs/etc/consul-template`. Under the `templates` folder, the currently used templates can be found. The `consul-template.cfg` is the file controlling all the templates that need to be replaced.
+
+# Build arguments
+
+`PHP_MAJOR_VERSION` is used to control which version of fpm/cli gets built currently. Most of the extensions are built like this. For an example, please consult the `build.sh` from each folder.
