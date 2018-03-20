@@ -12,25 +12,10 @@ apt-get update && \
     apt-get install -yqq --no-install-recommends \
         php${PHP_MAJOR_VERSION}-cli \
         php${PHP_MAJOR_VERSION}-opcache \
-        php-amqp \
         php${PHP_MAJOR_VERSION}-mysql \
-        php-igbinary \
-        php-msgpack \
-        php-imagick \
         php${PHP_MAJOR_VERSION}-curl \
-        php${PHP_MAJOR_VERSION}-gd \
-        php${PHP_MAJOR_VERSION}-intl \
-        php${PHP_MAJOR_VERSION}-json \
-        php${PHP_MAJOR_VERSION}-ldap \
-        php-memcache \
         php-memcached \
         php${PHP_MAJOR_VERSION}-readline \
-        php${PHP_MAJOR_VERSION}-zip \
-        php${PHP_MAJOR_VERSION}-simplexml \
-        php${PHP_MAJOR_VERSION}-mbstring \
-        php${PHP_MAJOR_VERSION}-dom \
-        php${PHP_MAJOR_VERSION}-xml \
-        unzip \
         ca-certificates \
         apt-transport-https \
         vim \
