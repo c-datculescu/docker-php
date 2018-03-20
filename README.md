@@ -60,3 +60,19 @@ This function serves as a mere example of calculating dynamically the number of 
 # Worker processes
 
 All worker processes for both nginx and fpm are running by default under the root user. Please adjust this to fit your needs. Running workers under root does pose security issues.
+
+# General directory structure
+
+The `_rootfs` folder in each directory contains a folder system that maps directly to the location of files or folders present in a linux system. This helps with managing the configurations better and avoids the chaos that generally happens when a lot of configuration files are needed for docker.
+
+# Fpm configuration
+
+As the image uses [sury](https://deb.sury.org/), the php configuration is no longer located in the same location as usual. In order to help with this issue (inconsistency for automated build tools), there is an extra folder located in `/etc/php/global` which is a symlink to the target php version (for example for php 5.6, `/etc/php/5.6` is a symlink to `/etc/php/global`). All the configurations can be placed in the `/etc/php/global` folder and they will be properly processed.
+
+Additionally, by default the php socket is located in `/run/php/php-fpm.sock`.
+
+# Nginx configuration
+
+The nginx configuration is located in the official location, and nginx is configured to communicate with php-fpm via socket.
+
+The home location of the fpm/nginx installation is located in `/var/www/html/`.
