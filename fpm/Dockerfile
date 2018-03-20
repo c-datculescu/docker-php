@@ -1,5 +1,5 @@
 ARG PHP_MAJOR_VERSION=5.6
-FROM westwing/ww-images:base-php-cli-${PHP_MAJOR_VERSION}
+FROM cdatculescu/php:cli-${PHP_MAJOR_VERSION}
 
 ARG DEBIAN_FRONTEND=noninteractive
 ARG PHP_MAJOR_VERSION=5.6
